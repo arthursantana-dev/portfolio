@@ -1,0 +1,93 @@
+@import url(./var.css);
+
+body {
+	background-color: var(--bg);
+}
+
+p, a {
+	font-family: var(--font-content);
+}
+
+h1, h2 {
+	font-family: var(--font-header);
+}
+
+/* Header */
+
+header.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--main);
+	padding-inline: max(1rem, min(20vw, 3rem)) ;
+	padding-block: 1rem;
+	
+}
+
+img.site-logo {
+	width: 8rem;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	height: 100%;
+	align-items: center;
+}
+
+header li {
+	list-style: none;
+}
+
+header a {
+	text-decoration: none;
+	color: var(--content)
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+/* Hero */
+
+section.hero {
+	object-fit: fill;
+	background-image: url(../img/hero-img.jpg);
+	background-size: cover;
+	height: 60vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.hero__content {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+h1.hero__title, p.hero__desc {
+	color: var(--main);
+}
+
+h1.hero__title {
+	font-size: 4rem;
+}
+
+p.hero__desc {
+	font-size: 2rem;
+}
+
+/* Main */
+
+section.card {
+	max-width: min(98vh, 50rem);
+	margin-inline: auto;
+	background-color: var(--main);
+}
+
+mark {
+	background-color: var(--secondary);
+}
