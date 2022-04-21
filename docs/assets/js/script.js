@@ -17,7 +17,7 @@ const headerGlassObserver = new IntersectionObserver(entries => {
 		console.log('hero in viewport');
 	})
 }, {
-	threshold: 0.3
+	threshold: 0.4
 })
 
 

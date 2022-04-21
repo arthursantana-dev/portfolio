@@ -97,7 +97,7 @@ header a:hover {
 
 section.hero {
 	object-fit: fill;
-	background-image: url(../img/hero-img.jpg);
+	background-image: url(../img/hero-img\ 2.png);
 	background-size: cover;
 	height: 80vh;
 
@@ -162,4 +162,12 @@ section.card {
 
 p.card__content a.card__link {
 	color: var(--link);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+	img.site-logo {
+		display: none;
+	}
 }
