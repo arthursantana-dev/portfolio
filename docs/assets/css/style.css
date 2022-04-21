@@ -1,5 +1,9 @@
 @import url(./var.css);
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--bg);
 	height: 200vh;
@@ -33,6 +37,30 @@ header.header {
 
 	-webkit-box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.3); 
 	box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.3);
+
+
+	transition: 0.5s;
+	
+}
+
+.header.glass {
+	background: rgba(255, 255, 255, 0.23);
+	backdrop-filter: blur(6.6px);
+	-webkit-backdrop-filter: blur(6.6px);
+	border: 1px solid rgba(255, 255, 255, 0.37);
+	/* transition: 0.5s; */
+}
+
+.header.glass a {
+	color: var(--main);
+}
+
+.header.glass * {
+	opacity: 1;
+}
+
+.header.glass img.site-logo {
+	content: url('../img/logos-as/arthur\ santana-w-no-shadow.png');
 }
 
 header.header  * {

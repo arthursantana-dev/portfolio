@@ -1,4 +1,6 @@
 const cards = document.querySelectorAll('.card')
+const header = document.querySelector('header.header')
+const hero = document.querySelector('section.hero')
 
 const showObserver = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
@@ -6,8 +8,23 @@ const showObserver = new IntersectionObserver(entries => {
 
 	})
 }, {
-	threshold: 0.7,
+	threshold: 0.4,
+})
+
+const headerGlassObserver = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		header.classList.toggle('glass', entry.isIntersecting)
+		console.log('hero in viewport');
+	})
+}, {
+	threshold: 0.3
 })
 
 
 cards.forEach(card => showObserver.observe(card))
+headerGlassObserver.observe(hero)
+
+const goToAboutMe = () => {
+	const aboutMe = document.querySelector('section.sobre-mim')
+	aboutMe.scrollIntoView({behavior: 'smooth', block: 'nearest'})
+}
