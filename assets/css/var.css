@@ -6,6 +6,11 @@
 	--bg: #F0F0F0;
 	--main: #FFFFFF;
 	--content: black;
+	--link: rgb(69, 69, 69);
+
+	--w-light: 300;
+	--w-normal: 500;
+	--w-bold: 700;
 
 	--font-header: "Yeseva One", sans-serif;
 	--font-content: "Source Sans Pro", sans-serif;
