@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Santana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/Group 2-favicon-2.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Arthur Santana</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="shortcut icon" href="./assets/img/Group 2-favicon-2.png" type="image/x-icon">
-</head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/img/logos-as/arthur santana-b-no-shadow.png"
+        alt=""
+        class="site-logo"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a onclick="goToAboutMe()"> sobre mim </a>
+          </li>
+          <li>
+            <a href="./graphic-projects.html"> projetos gráficos </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-	<header class="header">
-		<img src="./assets/img/logos-as/arthur santana-b-no-shadow.png" alt="" class="site-logo">
-		<nav>
-			<ul>
-				<li>
-					<a onclick="goToAboutMe()">
-						sobre mim
-					</a>
-				</li>
-				<li>
-					<a href="">
-						meus projetos
-					</a>
-				</li>
-				<li>
-					<a href="">
-						contato
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <section class="hero" id="section1">
+      <div class="hero__content">
+		<img class="hero__img" src="./assets/img/logos-as/arthur santana-w-no-shadow.png" alt="">
+        <h1 class="hero__title">olá!</h1>
+        <p class="hero__desc">
+          bem-vindo(a) <br />
+          ao meu site!
+        </p>
+      </div>
+    </section>
 
-	<section class="hero" id="section1">
-		<div class="hero__content">
-			<h1 class="hero__title">
-				olá!
-			</h1>
-			<p class="hero__desc">
-				bem-vindo(a) <br>
-				ao meu site!
-			</p>
-		</div>
-	</section>
+    <section class="card sobre-mim">
+      <h2 class="card__title">sobre mim</h2>
+      <p class="card__content">
+        Me chamo Arthur, tenho 17 anos e sou fanático por tecnologia e
+        programação. Estudo desenvolvimento de software, principalmente
+        front-end. Também curso Desenvolvimento de Sistemas na Escola Técnica
+        Estadual. <br />
+        <br />
 
-	<section class="card sobre-mim">
-		<h2 class="card__title">
-			sobre mim
-		</h2>
-		<p class="card__content">
-			Me chamo Arthur, tenho 15 anos e sou fanático por tecnologia e programação. Estudo desenvolvimento de
-			software, principalmente front-end <br> <br>
+        Há mais de um ano, comecei a estudar Python pelo
+        <a href="https://www.cursoemvideo.com/" class="card__link"
+          >Curso em Vídeo</a
+        >, do Gustavo Guanabara. Adorava usar estruturas lógicas simples para
+        mostrar um resultado no terminal. Mas cadê a interface? Ninguém gosta de
+        telas pretas! Por isso, iniciei o curso de HTML e CSS da mesma
+        plataforma. <br />
+        <br />
 
-			Há mais de um ano, comecei a estudar Python pelo <a href="https://www.cursoemvideo.com/"
-				class="card__link">Curso em Vídeo</a>, do Gustavo Guanabara. Adorava usar estruturas lógicas simples
-			para mostrar um resultado no terminal. Mas cade a interface? Ninguém gosta de telas pretas! Por isso,
-			iniciei o curso de HTML e CSS da mesma plataforma. <br> <br>
+        Daí pra frente, foi pura aprendizagem: media querries, layout Flexbox,
+        Grid, nomenclatura BEM, descobri como manipular elementos com Javascript
+        e Jquery... <br />
+        <br />
 
-			Daí pra frente, foi pura aprendizagem: media querries, layout Flexbox, Grid, nomenclatura BEM, descobri como
-			manipular elementos com Javascript e Jquery... <br> <br>
+        Atualmente estudo React e Frameworks CSS, como o Bootstrap.
+      </p>
+    </section>
 
-			Atualmente estudo React e Frameworks CSS, como o Bootstrap.
-		</p>
-	</section>
-
-	<script src="./assets/js/script.js"></script>
-</body>
-
+    <script src="./assets/js/script.js"></script>
+  </body>
+  <footer>
+	<img class="footer__img" src="./assets/img/logos-as/preto.png">
+	<div class="footer__icon-wrapper">
+		<a href="https://github.com/arthursantana-dev"><img src="./assets/img/icons/github-icon.png" class="footer__icon"></a>
+		<a href="https://www.instagram.com/dev.arthur.s/"><img src="./assets/img/icons/ig-icon.png" class="footer__icon"></a>
+	</div>
+  </footer>
 </html>

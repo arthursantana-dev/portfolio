@@ -28,3 +28,9 @@ const goToAboutMe = () => {
 	const aboutMe = document.querySelector('section.sobre-mim')
 	aboutMe.scrollIntoView({behavior: 'smooth', block: 'nearest'})
 }
+
+
+const backToTop = () => {
+	const aboutMe = document.querySelector('h2.card__title')
+	aboutMe.scrollIntoView({behavior: 'smooth', block: 'nearest'})
+}

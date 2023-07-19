@@ -1,0 +1,22 @@
+@import url(style.css);
+
+section.card {
+	width: 90vw;
+	max-width: 40rem;
+}
+
+.gallery-img {
+	transition: 0.2s;
+}
+
+.gallery-img:hover, .gallery-img:focus{
+	scale: 1.2;
+}
+
+h1.hero__title {
+	font-size: 5rem;
+}
+
+a.gallery__back-to-top {
+	margin: auto;
+}

@@ -6,7 +6,6 @@ html {
 
 body {
 	background-color: var(--bg);
-	height: 200vh;
 }
 
 p, a {
@@ -28,8 +27,8 @@ header.header {
 	padding-block: 1rem;
 	opacity: 0.9;
 
-	height: 2rem;
-	width: calc(95vw - max(1rem, min(20vw, 3rem)));
+	height: 4rem;
+	width: 100%;
 	
 	position: fixed;
 
@@ -48,6 +47,8 @@ header.header {
 	backdrop-filter: blur(6.6px);
 	-webkit-backdrop-filter: blur(6.6px);
 	border: 1px solid rgba(255, 255, 255, 0.37);
+	height: 4rem;
+	width: 100%;
 	/* transition: 0.5s; */
 }
 
@@ -77,6 +78,7 @@ nav ul {
 	gap: 1rem;
 	height: 100%;
 	align-items: center;
+	justify-content: space-around;
 }
 
 header li {
@@ -108,11 +110,21 @@ section.hero {
 	justify-content: center;
 }
 
+section.hero--purple{
+	background-image: url(../img/purple-clouds.jpg);
+}
+
 div.hero__content {
 	display: flex;
 	justify-content: space-between;
 	width: 90%;
 	align-items: center;
+}
+
+img.hero__img {
+	display: none;
+	width: 12rem;
+    margin-bottom: 2rem;
 }
 
 h1.hero__title, p.hero__desc {
@@ -164,10 +176,55 @@ p.card__content a.card__link {
 	color: var(--link);
 }
 
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-block: 4rem;
+}
+
+img.footer__img {
+	width: 18rem;
+}
+
+img.footer__icon {
+	width: 2.4rem;
+}
+
+.footer__icon-wrapper{
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 500px) {
 	img.site-logo {
 		display: none;
+	}
+	img.hero__img {
+		display: block;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav.ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.hero__content{
+		flex-direction: column;
+	}
+
+	footer {
+		flex-direction: column-reverse;
+	}
+
+	.footer__img {
+		margin-top: 2rem;
 	}
 }
