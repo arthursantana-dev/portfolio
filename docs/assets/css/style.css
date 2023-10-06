@@ -168,8 +168,40 @@ section.card {
 	margin-bottom: 0.75rem;
 }
 
-.card p.card__content {
-	font-size: 1.15rem;
+section.card__profile-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+div.vr {
+	border: 1px solid rgb(88, 88, 88);
+	width: 1px !important;
+	height: 9rem;
+	align-self: center;
+}
+
+section.card__profile-info img {
+	width: 12rem;
+	border-radius: 100%;
+}
+
+section.card__profile-info p {
+	font-size: 1.2rem;
+	opacity: 0.7;
+}
+
+div.profile-info-content {
+	display: flex;
+	flex-direction: column;
+	height: 10rem;
+}
+
+.card p {
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
 
 p.card__content a.card__link {
