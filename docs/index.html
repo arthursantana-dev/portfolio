@@ -35,11 +35,14 @@
       <nav>
         <ul>
           <li>
-            <a onclick="goToAboutMe()"> sobre mim </a>
+            <a href="#" onclick="goToAboutMe()"> sobre mim </a>
           </li>
           <li>
             <a href="./graphic-projects.html"> projetos gráficos </a>
           </li>
+		  <li>
+			<a href=""> projetos de software </a>
+		  </li>
         </ul>
       </nav>
     </header>
@@ -57,23 +60,21 @@
 
     <section class="card sobre-mim">
 
-	  <section class="card__profile-info">
+	  <section class="card__profile-info flex-column flex-md-row">
 		<img src="./assets/img/pfp.jpg">
-		<div class="vr">
+		<div class="vr d-none d-md-block">
 		</div>
 		<div class="profile-info-content">
-			<h2 class="card__title">sobre mim</h2>
-			<p>
+			<h2 class="card__title text-center text-md-start">sobre mim</h2>
+			<p class="text-center text-md-left">
 				Me chamo Arthur, tenho 17 anos e sou fanático por tecnologia e
 				programação.
 			</p>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 		</div>
 	  </section>
+
+	  <hr class="d-md-none">
+
       <p class="card__content">
         Curso Desenvolvimento de Sistemas na Escola Técnica
         Estadual. <br />

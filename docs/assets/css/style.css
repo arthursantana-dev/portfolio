@@ -8,7 +8,7 @@ body {
 	background-color: var(--bg);
 }
 
-p, a {
+p, a, li {
 	font-family: var(--font-content);
 }
 
@@ -151,9 +151,13 @@ section.card {
 
 	/* transform: translateY(-1.5rem); */
 	transition: 0.9s;
-
+/* 
 	-webkit-box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.3); 
-	box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.3); */
+
+	/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
 }
 
@@ -184,14 +188,16 @@ div.vr {
 }
 
 section.card__profile-info img {
-	width: 12rem;
+	width: 10rem;
 	border-radius: 100%;
 }
 
-section.card__profile-info p {
+section.card__profile-info p, section.card__profile-info ul {
 	font-size: 1.2rem;
 	opacity: 0.7;
+	width: 18rem;
 }
+
 
 div.profile-info-content {
 	display: flex;
